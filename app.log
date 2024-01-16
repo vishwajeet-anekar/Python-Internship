@@ -1,0 +1,14 @@
+2024-01-16 16:27:37,272 - INFO - User admin logged in successfully.
+2024-01-16 16:27:37,275 - WARNING - Failed login attempt for user john.
+2024-01-16 16:30:22,473 - INFO - User admin logged in successfully.
+2024-01-16 16:30:22,479 - WARNING - Failed login attempt for user - warningjohn.
+2024-01-16 16:30:22,479 - ERROR - Invalid credentials for user - errorjohn.
+2024-01-16 16:30:22,480 - CRITICAL - this is the critical error for user - criticaljohn.
+INFO:root:User admin logged in successfully.
+WARNING:root:Failed login attempt for user - warningjohn.
+ERROR:root:Invalid credentials for user - errorjohn.
+CRITICAL:root:this is the critical error for user - criticaljohn.
+2024-01-16 16:32:47,807 - INFO - User admin logged in successfully.
+2024-01-16 16:32:47,810 - WARNING - Failed login attempt for user john.
+2024-01-16 16:33:05,958 - INFO - User admin logged in successfully.
+2024-01-16 16:33:05,960 - WARNING - Failed login attempt for user vishwajeet.
