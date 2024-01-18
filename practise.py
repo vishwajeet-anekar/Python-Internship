@@ -29,4 +29,23 @@
 
 
 #global vs Local
+# l1 = []
+# inp1 = input('enter any number')
+# l1 = [int(element) for element in inp1.split()] 
+# print(l1)
 
+# ans = [demo for demo in l1 if demo % 2==0]
+# print(ans)
+
+# a = []
+# inp2 = input('Numbers')
+# demo = inp2.split()
+# for i in demo:
+#     a.append(int(i))
+# print(a)
+
+# for i in range(2,5):
+#     for j in range(1,11):
+#         if i == j:
+#             break
+#         print(i, "*" ,j,"=" ,i*j)
