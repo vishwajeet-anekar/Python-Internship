@@ -49,3 +49,29 @@
 #         if i == j:
 #             break
 #         print(i, "*" ,j,"=" ,i*j)
+# #mehtod to accept int in the list
+
+# n = list(map(int,input('Numbers:- ').split()))
+# print(n)
+
+# ans = []
+# n1 = input('D')
+# ans = [int(d) for d in n1.split()]
+# print(ans)
+
+demo ={
+    'name' : 'vishwajeet',
+    'class': 'MCA',
+    'Id' : 1001
+}
+
+print(demo)
+
+print(demo.keys())
+print(demo.values())
+
+demo['occupation']='Software Dev'
+print(demo)
+
+del demo['occupation']
+print(demo)
