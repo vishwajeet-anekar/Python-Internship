@@ -59,19 +59,29 @@
 # ans = [int(d) for d in n1.split()]
 # print(ans)
 
-demo ={
-    'name' : 'vishwajeet',
-    'class': 'MCA',
-    'Id' : 1001
-}
+# demo ={
+#     'name' : 'vishwajeet',
+#     'class': 'MCA',
+#     'Id' : 1001
+# }
 
-print(demo)
+# print(demo)
 
-print(demo.keys())
-print(demo.values())
+# print(demo.keys())
+# print(demo.values())
 
-demo['occupation']='Software Dev'
-print(demo)
+# demo['occupation']='Software Dev'
+# print(demo)
 
-del demo['occupation']
-print(demo)
+# del demo['occupation']
+# print(demo)
+
+#sets difference
+s1 = {1,2,3,4,5}
+# s2 = {3,4,5,6,7}
+
+# ans = s1.difference(s2)
+# print(ans)
+
+s1.discard(3)
+print(s1)
