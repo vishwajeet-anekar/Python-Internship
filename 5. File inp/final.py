@@ -1,6 +1,6 @@
 import csv
 
-
+# 6 Permissions (x,w,r,a,+)
 def read_text_file(file_path):
     try:
         with open(file_path, 'r') as file:
@@ -42,10 +42,19 @@ def write_csv_file(file_path, data):
     except IOError:
         print(f"Error writing to CSV file '{file_path}'.")
 
-
-# Example usage
-text_file_path = 'example.txt'
-csv_file_path = 'example.csv'
+def append_csv_file(file_path, data):
+    try:
+        with open(file_path, 'a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(data)
+            print(f"Data appended to CSV file '{file_path}'.")
+    except IOError:
+        print(f"Error appending to CSV file '{file_path}'.")
+        
+        
+# Main Program 
+text_file_path = 'filedemo.txt'
+csv_file_path = 'filedemo.csv'
 
 # Read from text file
 text_content = read_text_file(text_file_path)
@@ -63,6 +72,11 @@ if csv_data:
     for row in csv_data:
         print(row)
 
+# Append to CSV file
+additional_csv_data = [['Radha', '35'], ['Akash', '45']]
+append_csv_file(csv_file_path, additional_csv_data)
+
 # Write to CSV file
-new_csv_data = [['Name', 'Age'], ['John', '25'], ['Lisa', '30'], ['Mark', '40']]
+new_csv_data = [['Name', 'Age'], ['ravi', '15'], ['rohit', '10'], ['rahul', '10']]
 write_csv_file(csv_file_path, new_csv_data)
+

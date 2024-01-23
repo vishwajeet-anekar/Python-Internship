@@ -1,12 +1,11 @@
 # User-defined exception
 class NegativeNumberException(Exception):
-    pass
+    pass    
 
-# Function that performs division
 def divide_numbers(a, b):
     try:
         if b < 0:
-            raise NegativeNumberException("Second number cannot be negative")
+            raise NegativeNumberException('Negative number is not allowed')
         result = a / b
         print("Result:", result)
     except ZeroDivisionError as e:
@@ -20,11 +19,8 @@ def divide_numbers(a, b):
 
 # Main program
 try:
-    # Prompt the user for input
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
-
-    # Perform division
     divide_numbers(num1, num2)
 
 except ValueError:
